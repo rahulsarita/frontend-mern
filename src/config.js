@@ -1,5 +1,7 @@
 export const config = {
-  SERVER_URL: window.location.hostname === 'localhost' ? 'https://proxispeak-a-geospatial-proximity-audio-ydgn.onrender.com' : `${window.location.protocol}//${window.location.hostname}:5000`,
+  SERVER_URL: window.location.hostname === 'localhost'
+    ? 'http://localhost:5000'
+    : 'https://proxispeak-a-geospatial-proximity-audio-ydgn.onrender.com',
   DEFAULT_ROOM_ID: 'default-office',
   CANVAS: {
     WIDTH: 2400,
